@@ -34,7 +34,7 @@ def crear_agente_ia():
     # un valor bajo como 0.3 lo hace más preciso y menos propenso a inventar.
     print("Inicializando el modelo Gemini-Pro...")
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-pro", # Usamos el nombre del modelo estándar y estable
+        model="gemini-2.5-pro",
         google_api_key=os.getenv("GOOGLE_API_KEY"), # Le pasamos la clave explícitamente
         temperature=0.3
     )
