@@ -3,75 +3,79 @@
         "nombre_modelo": "XGBoost",
         "tipo_tarea": "classification",
         "mejores_parametros": {
-            "max_depth": 10,
-            "n_estimators": 50
+            "colsample_bytree": 1.0,
+            "learning_rate": 0.2,
+            "max_depth": 5,
+            "min_child_weight": 5,
+            "n_estimators": 100,
+            "subsample": 0.8
         },
         "metricas": {
-            "Accuracy": 0.843,
-            "F1-Score": 0.7746,
-            "AUC": 0.4998,
-            "GINI": -0.0003
+            "Accuracy": 0.8458,
+            "F1-Score": 0.7751,
+            "AUC": 0.5032,
+            "GINI": 0.0064
         },
         "importancia_variables": [
             {
-                "feature": "cat_var_3_canal_Telefono",
-                "importance": 0.07206838577985764
-            },
-            {
-                "feature": "cont_var_1",
-                "importance": 0.07105697691440582
-            },
-            {
-                "feature": "cont_var_4",
-                "importance": 0.07071878015995026
-            },
-            {
-                "feature": "cont_var_3",
-                "importance": 0.07023027539253235
-            },
-            {
-                "feature": "cat_var_2_producto_B",
-                "importance": 0.06984260678291321
-            },
-            {
-                "feature": "cont_var_2",
-                "importance": 0.06963759660720825
-            },
-            {
-                "feature": "cont_var_5",
-                "importance": 0.06812558323144913
-            },
-            {
-                "feature": "cat_var_1_region_Oeste",
-                "importance": 0.06643862277269363
+                "feature": "cat_var_3_canal_Tienda",
+                "importance": 0.07901288568973541
             },
             {
                 "feature": "cat_var_1_region_Este",
-                "importance": 0.06610309332609177
+                "importance": 0.07048306614160538
             },
             {
-                "feature": "cat_var_3_canal_Tienda",
-                "importance": 0.06585367769002914
+                "feature": "cont_var_4",
+                "importance": 0.06874463707208633
+            },
+            {
+                "feature": "cont_var_5",
+                "importance": 0.0681159719824791
+            },
+            {
+                "feature": "cont_var_2",
+                "importance": 0.06796218454837799
             },
             {
                 "feature": "cat_var_2_producto_D",
-                "importance": 0.06484228372573853
+                "importance": 0.067674420773983
             },
             {
-                "feature": "cat_var_1_region_Sur",
-                "importance": 0.06320185214281082
+                "feature": "cont_var_3",
+                "importance": 0.06761790812015533
+            },
+            {
+                "feature": "cont_var_1",
+                "importance": 0.06751669198274612
             },
             {
                 "feature": "cat_var_2_producto_C",
-                "importance": 0.06140602007508278
-            },
-            {
-                "feature": "cat_var_4_booleano_Si",
-                "importance": 0.060439810156822205
+                "importance": 0.0673292875289917
             },
             {
                 "feature": "cat_var_1_region_Norte",
-                "importance": 0.06003441661596298
+                "importance": 0.06658075004816055
+            },
+            {
+                "feature": "cat_var_1_region_Oeste",
+                "importance": 0.06459196656942368
+            },
+            {
+                "feature": "cat_var_3_canal_Telefono",
+                "importance": 0.06322812288999557
+            },
+            {
+                "feature": "cat_var_1_region_Sur",
+                "importance": 0.06272818893194199
+            },
+            {
+                "feature": "cat_var_2_producto_B",
+                "importance": 0.060163967311382294
+            },
+            {
+                "feature": "cat_var_4_booleano_Si",
+                "importance": 0.05824995040893555
             }
         ]
     }
