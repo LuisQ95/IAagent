@@ -8,9 +8,9 @@ from langchain.tools import Tool
 from typing_extensions import Annotated
 
 # Importar las herramientas de los agentes especializados
-from agente_conexion import obtener_datos_desde_csv, obtener_datos_desde_postgres
-from agente_preprocesamiento import analizar_y_preprocesar_datos, PreprocesarInput
-from agente_modelado import optimizar_y_entrenar_modelo
+from agentes.agente_conexion import obtener_datos_desde_csv, obtener_datos_desde_postgres
+from agentes.agente_preprocesamiento import analizar_y_preprocesar_datos, PreprocesarInput
+from agentes.agente_modelado import optimizar_y_entrenar_modelo
 
 # --- Prompt para el agente ---
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
